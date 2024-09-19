@@ -7,7 +7,7 @@ const fetchAdminDataForDashboard = () => {
             document.querySelector(".middle-left").innerHTML = ` 
              <div class="middle-left-pp w-28 mb-5 overflow-hidden rounded-full">
                         <img class="aspect-square object-contain "
-                            src="img/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg" alt="">
+                            src="${data.photo}" alt="">
                     </div>
 
                     <span class="text-xl mb-5">${data.name}</span>

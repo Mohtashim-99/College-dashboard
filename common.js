@@ -32,6 +32,9 @@ const fetchadmindata = () => {
             <div class="">
                     <span class="whitespace-nowrap text-2xl font-medium">${data.name}</span>
             </div>`
+            document.querySelector(".profile-photo").innerHTML=`
+            <img class="aspect-square object-contain w-12 "
+                                src="${data.photo}" alt="">`;
 
         })
         .catch(error => {
