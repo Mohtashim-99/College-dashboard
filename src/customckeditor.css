@@ -1,0 +1,40 @@
+.main-container {
+    width: 795px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    overflow: hidden;
+    border-radius: 23px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  
+}
+
+.editor-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+}
+
+#submit-edit {
+    background-color: rgb(24, 24, 215);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 23px;
+    font-size: 16px;
+}
+
+#cancel-edit {
+    border: 1px solid rgb(24, 24, 215);
+    color: rgb(24, 24, 215);
+    font-size: 16px;
+    background: transparent;
+    border-radius: 23px;
+    padding: 10px 20px;
+}

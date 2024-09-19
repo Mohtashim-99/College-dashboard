@@ -1,0 +1,125 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        
+        body {
+            font-family: Roboto, sans-serif;
+
+        }
+
+        .left-container {
+            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 2px 24px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease-in;
+        }
+
+        li {
+            font-family: Roboto, sans-serif;
+            font-size: 17px;
+            font-weight: 400;
+        }
+
+      
+        .main-top {
+            padding: 0 20px;
+
+        }
+
+        .side-a {
+            transition: all .2s ease;
+            color: rgb(23, 25, 28);
+        }
+
+        .side-a:hover {
+            color: #1062fe;
+        }
+
+        
+
+        .profile-name span {
+            font-family: Roboto, sans-serif;
+
+        }
+
+        .profile-dropdown,
+        .middle-left,
+        .middle-right-card,
+        .table-div {
+            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 2px 24px rgba(0, 0, 0, 0.08);
+
+
+        }
+
+        .middle-right-card:hover {
+            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.12), 0px 16px 40px rgba(0, 0, 0, 0.16);
+            transform: translate3d(0, -8px, 0);
+
+        }
+
+
+        .editable {
+            transition: all .3s ease;
+        }
+
+  
+     
+        
+        .disabled{
+            background-color:#d7ecff;
+            color:#6097ff;
+            cursor:not-allowed;
+            
+        } 
+       
+
+        @media (max-width:950px) {
+            .left-container {
+                position: absolute;
+                left: -100%;
+                transition: all 0.3s ease-in;
+                overflow: auto;
+                height: 100vh;
+            }
+
+            .bars-div {
+                display: block;
+
+            }
+
+        }
+
+        @media (max-width:800px) {
+            .middle {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width:480px) {
+            .middle-right {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+            }
+
+            .middle-right-card a {
+                padding: 0px 40px;
+            }
+
+            .middle {
+                padding: 24px;
+            }
+
+            .table-div {
+                margin: 24px;
+            }
+
+            .second-header h1 {
+                font-size: 2.5rem;
+            }
+        }
