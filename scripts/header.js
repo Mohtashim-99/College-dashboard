@@ -85,7 +85,7 @@ const fetchadmindata = () => {
             document.querySelector(".profile-name").innerHTML = `
                 <span class="whitespace-nowrap ">${data.name}</span>`;
             document.querySelector(".profile-dropdown-top").innerHTML = `
-            <div class="flex justify-center  overflow-hidden rounded-full">
+            <div class="flex justify-center w-14 overflow-hidden rounded-full">
                     <img class="aspect-square object-contain w-16"
                     src="${data.photo}" alt="">
             </div>
