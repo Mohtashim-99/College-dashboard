@@ -65,7 +65,14 @@
         .editable {
             transition: all .3s ease;
         }
-
+        
+        .error-div{
+            border:1px solid rgb(250, 225, 226);
+            color:#b6202a;
+            background-color :rgb(252, 238, 239);
+            padding:  1rem 1.5rem;
+            margin:1rem  0 1rem  0;
+        }
   
      
         
