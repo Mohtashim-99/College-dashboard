@@ -17,25 +17,25 @@ let headerHTML = `
         </div>
         <hr>
         <ul class="py-3">
-            <li>
+            <li class="your-profile-li">
                 <a class="px-6 py-1.5 text-sm flex items-center gap-3 transition-all duration-200 ease-in group hover:text-primary hover:pl-9" href="">
                     <i class="fa-solid fa-user text-iconColor transition-all duration-200 ease-in group-hover:text-primary"></i>
                     <span>Your profile</span>
                 </a>
             </li>
-            <li>
+            <li class="account-details-li">
                 <a class="px-6 py-1.5 text-sm flex items-center gap-3 transition-all duration-200 ease-in group hover:text-primary hover:pl-9" href="">
                     <i class="fa-solid fa-circle-info text-iconColor transition-all duration-200 ease-in group-hover:text-primary"></i>
                     <span>Account details</span>
                 </a>
             </li>
-            <li>
+            <li >
                 <a class="px-6 py-1.5 text-sm flex items-center gap-3 transition-all duration-200 ease-in group hover:text-primary hover:pl-9" href="">
                     <i class="fa-solid fa-shuffle text-iconColor transition-all duration-200 ease-in group-hover:text-primary"></i>
                     <span>Switch account</span>
                 </a>
             </li>
-            <li>
+            <li class="password-li mb-2">
                 <a class="px-6 py-1.5 text-sm flex items-center gap-3 transition-all duration-200 ease-in group hover:text-primary hover:pl-9" href="password.php">
                     <i class="fa-solid fa-unlock text-iconColor transition-all duration-200 ease-in group-hover:text-primary"></i>
                     <span>Change password</span>
