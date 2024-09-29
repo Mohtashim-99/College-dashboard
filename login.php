@@ -90,9 +90,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             background-color :rgb(252, 238, 239);
             padding:  1rem 1.5rem;
             margin:1rem  0 1rem  0;
-            
-            
-
         }
     </style>
 </head>
