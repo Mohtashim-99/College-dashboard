@@ -1,8 +1,9 @@
 <?php
-$servername = "localhost";
+$servername = "localhost:3307";
 $username = "root";
-$password = "";
+$password = "mohtashim123";
 $database = "dashboard";
+    
 
 $conn = @mysqli_connect($servername,$username,$password,$database);
 if(!$conn){

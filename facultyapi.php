@@ -1,8 +1,12 @@
 <?php
 header('Content-Type: application/json');
+session_start();
 
 include 'connectiondb.php';
-$sql = "SELECT * FROM `faculty`";
+
+$dept_id = $_SESSION['dept_id'];
+
+$sql = "SELECT * FROM `faculty` WHERE `dept_id` = '$dept_id'" ;
 $result = mysqli_query($conn, $sql);
 $num = mysqli_num_rows($result);
 

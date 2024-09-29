@@ -136,82 +136,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
                     <i class="fa-solid fa-bars text-iconColor text-2xl"></i>
                 </div>
                 <div class="main-top-right max-w-full w-full   ">
-                    <div
-                        class="right-main-profile float-right flex items-center px-4 w-auto gap-3 transition-all duration-200 ease-in group  hover:text-primary cursor-pointer ">
-                        <div class="profile-photo w-12 overflow-hidden rounded-full ">
-                            <img class="aspect-square object-contain w-12 "
-                                src="img/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg " alt="">
-
-                        </div>
-                        <div class="profile-name inline-block">
-                            <span class="whitespace-nowrap "></span>
-                        </div>
-                        <span><i
-                                class="fa-solid fa-caret-down  text-iconColor transition-all duration-200 ease-in group-hover:text-primary"></i></span>
-                    </div>
-                    <div
-                        class="profile-dropdown absolute h-auto min-w-72 box-border right-0  mr-8 z-10 bg-white hidden top-16 whitespace-nowrap flex-col transition-all duration-1000 ease-in ">
-                        <div
-                            class="profile-dropdown-top flex overflow-hidden  items-center px-6 py-4 gap-2 flex-1 flex-nowrap">
-                            <!-- <div class="flex justify-center  overflow-hidden rounded-full">
-                                <img class="aspect-square object-contain w-16"
-                                    src="img/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg" alt="">
-                            </div>
-                            <div class="">
-                                <span class="whitespace-nowrap text-2xl font-medium">Mohtashim anayat</span>
-                            </div> -->
-                        </div>
-                        <hr>
-                        <ul class="py-3">
-                            <li>
-                                <a class="px-6 py-1.5 text-sm flex items-center gap-3 transition-all duration-200 ease-in group hover:text-primary hover:pl-9"
-                                    href="">
-                                    <i
-                                        class="fa-solid fa-user text-iconColor transition-all duration-200 ease-in group-hover:text-primary"></i>
-                                    <span>Your profile</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="px-6 py-1.5 text-sm flex items-center gap-3 transition-all duration-200 ease-in group hover:text-primary hover:pl-9"
-                                    href="">
-                                    <i
-                                        class="fa-solid fa-circle-info text-iconColor transition-all duration-200 ease-in group-hover:text-primary"></i>
-                                    <span>Account details</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="px-6 py-1.5 text-sm flex items-center gap-3 transition-all duration-200 ease-in group hover:text-primary hover:pl-9"
-                                    href="">
-                                    <i
-                                        class="fa-solid fa-shuffle text-iconColor transition-all duration-200 ease-in group-hover:text-primary"></i>
-                                    <span>Switch account</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="px-6 py-1.5     text-sm flex items-center gap-3 transition-all duration-200 ease-in group hover:text-primary hover:pl-9"
-                                    href="">
-                                    <i
-                                        class="fa-solid   fa-unlock text-iconColor transition-all duration-200 ease-in  group-hover:text-primary "></i>
-                                    <span>Change password</span>
-                                </a>
-                            </li>
-
-                            <hr>
-
-                            <li>
-                                <a class="px-6 py-1.5 mt-2 text-sm flex items-center gap-3 transition-all duration-200 ease-in group  hover:text-primary hover:pl-9"
-                                    href="logout.php">
-                                    <i
-                                        class="fa-solid fa-arrow-right-from-bracket  text-iconColor transition-all duration-200 ease-in group-hover:text-primary"></i>
-                                    <span>Logout</span>
-                                </a>
-                            </li>
-
-                        </ul>
-                    </div>
+                  
+                   
+                       
                 </div>
 
 
@@ -299,9 +226,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         officia cupiditate non in excepturi commodi perferendis natus eum rem, maiores pariatur.
     </div>
 
-    <script src="notification.js"></script>
-    <script src="sidebar.js"></script>
-    <script src="common.js"></script>
+    <script src="scripts/notification.js"></script>
+    <script src="scripts/sidebar.js"></script>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/header.js"></script>
 
 </body>
 

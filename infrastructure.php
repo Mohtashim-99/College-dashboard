@@ -1,10 +1,10 @@
 <?php
 session_start(); 
 
-if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true){
-    header("location:login.php");
-    exit;
-}
+// if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true){
+//     header("location:login.php");
+//     exit;
+// }
 
 ?>
 <!DOCTYPE html>
@@ -150,54 +150,22 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true){
             <div class="second-header my-8 pl-10 ">
                 <h1 class="text-5xl font-black">Infrastructure</h1>
             </div>
-            <section class="middle p-12  gap-4 justify-between  hidden">  
+            <section class="middle p-12  gap-4 justify-between "> 
+                <div class="card-info">
+                        <h2 class="text-primary text-2xl mb-4 mt-6">Online Admissions System</h2>
+                        <p  class="text-lg mb-5 "> The department has designed and implemented a robust online admissions system that simplifies the entire admission process. Prospective students can submit their applications online, upload necessary documents, and track their application status in real-time. This user-friendly system not only reduces paperwork and administrative burden but also ensures a smooth and efficient admissions experience for applicants.</p>
+                    </div>
+                    <hr>
+
+                    <div class="card-info">
+                        <h2 class="text-primary text-2xl mb-4 mt-6">Examination Management System</h2>
+                        <p  class="text-lg mb-5 "> The department has devoted significant efforts to developing an examination management system that automates multiple aspects of the examination process. This comprehensive system encompasses tasks such as exam scheduling, registrations, the release of admit cards, and the generation of various related reports. It also ensures the secure delivery of online exams. Furthermore, the system facilitates the seamless uploading of internal and external awards, streamlining the management of assessment data. It incorporates an automated grading and result generation process, which significantly reduces the time and effort required by faculty members. By leveraging technology, the department ensures a smooth and error-free examination experience for both students and faculty members.</p>
+                    </div>
+                    <hr> 
             </section>
 
             <div class="table-div p-8 m-12 overflow-auto">
-                <table class="w-full">
-                    <thead>
-                        <tr>
-                            <th>Sno</th>
-                            <th>Degree</th>
-                            <th>Intake Capacity</th>
-                            <th>Eligibilty</th>
-                            <th>Mode of admission</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tbody-faculty-data">
-
-                    <tr>
-                            <td>1</td>
-                            <td>Bachelors in Computer Applications (Hons) (3+1)</td>
-                            <td>80</td>
-                            <td>The Candidate must have passed Senior Secondary Part-II (10+2) Examination in any stream and obtained in aggregate a minimum of 45% Marks (40% in case of reserved category) or equivalent grade scale of respective Boards/Universities at the 10+2 level</td>
-                            <td>Through Common University Entrance Test (CUET)</td>
-                    </tr>
-
-                    <tr>
-                            <td>2</td>
-                            <td>Masters in Computer Applications (M.C.A)</td>
-                            <td>20</td>
-                            <td>Have pursued Bachelors degree in computer application</td>
-                            <td>Through Entrance conducted by Kashmir University</td>
-                    </tr>
-
-                    <tr>
-                            <td>3</td>
-                            <td>Applied computing as Minor course</td>
-                            <td>40</td>
-                            <td>The Candidate must have passed Senior Secondary Part-II (10+2) Examination in any stream and obtained in aggregate a minimum of 45% Marks (40% in case of reserved category) or equivalent grade scale of respective Boards/Universities at the 10+2 level</td>
-                            <td>Through Entrance conducted by Kashmir University</td>
-                    </tr>
-                        <!-- <tr id="loading-row">
-                            <td colspan="4">
-                                <l-infinity size="55" stroke="4" stroke-length="0.15" bg-opacity="0.1" speed="1.3"
-                                    color="#0C32F0">
-                                </l-infinity>
-                            </td>
-                        </tr> -->
-                    </tbody>
-                </table>
+ 
             </div>
 
             
@@ -236,7 +204,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true){
                 console.error(error);
             });
     </script>
-
+  
     <!-- A friendly reminder to run on a server, remove this during the integration. -->
     <script>
         window.onload = function () {
@@ -247,7 +215,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true){
     </script>
 
     <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/infinity.js"></script>
-    <script src="sidebar.js"></script>
-    <script src="common.js"></script>
+    <script src="scripts/sidebar.js"></script>
+    <script src="scripts/common.js"></script>
    </body>
     </html>
