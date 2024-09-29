@@ -10,7 +10,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     include "connectiondb.php";
 
     $paragraph = $_POST["addparagraph"];
-    $page_id = 1; // This should be dynamic or configurable as needed
+    $page_id = 1; 
     $dept_id = $_SESSION['dept_id'];
 
     // Get the current highest order value for the given page_id and dept_id
