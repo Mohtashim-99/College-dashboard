@@ -1,6 +1,6 @@
 
             let sidebarHTML = `<div class="left-container-logo-div w-28 py-3 pl-7 box-border max-w-full h-auto">
-                <img class="aspect-square object-contain max-w-full" src="img/Degree_college_boya_baramulla_logo.jpeg"
+                <img class="aspect-square object-contain max-w-full ml-4 w-24 mb-3" src="img/Degree_college_boya_baramulla_logo.jpeg"
                     alt="">
             </div>
             <ul class="sidebarul">
