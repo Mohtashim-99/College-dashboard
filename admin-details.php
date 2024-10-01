@@ -1,5 +1,6 @@
 <?php
 session_start();
+header("content-type:application/json");
 
 if(!isset($_SESSION['loggedin'])|| ($_SESSION['loggedin']!=true)){
     echo json_encode(['error' =>'User not logged in']);
