@@ -9,6 +9,7 @@ module.exports = {
         gray_base: '#5E636E',
         gray_darker: '#17191C;',
         iconColor: '#6b6d71',
+        danger:'#d92632',
       },
     },
   },
