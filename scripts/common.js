@@ -85,11 +85,15 @@ let toggleBtnTxt = document.querySelector(".toggle-form-btn span");
 let formDiv = document.querySelector(".form-bottom");
 
 
-// Get default texts from data attributes
-let addText = toggleBtn.getAttribute("data-add-text");
-let closeText = toggleBtn.getAttribute("data-close-text");
 
-toggleBtn.addEventListener("click", () => {
+
+if(toggleBtn){
+    // Get default texts from data attributes
+     let addText = toggleBtn.getAttribute("data-add-text");
+    let  closeText = toggleBtn.getAttribute("data-close-text");
+
+
+    toggleBtn.addEventListener("click", () => {
     if (formDiv.style.display == "block") {
         toggleBtnTxt.innerText = addText; // Use the data attribute for the add text
         toggleBtn.querySelector("i").className = "fa-solid fa-plus mr-1";
@@ -103,6 +107,9 @@ toggleBtn.addEventListener("click", () => {
     }
 
 });
+}
+
+
 
 
 
