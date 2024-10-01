@@ -105,7 +105,6 @@ echo "<script>
         }
         input{
             border: 2px solid rgb(222, 224, 227);
-            margin-bottom: 1rem;
             padding: 0.5rem 1rem;
             border-radius: 4px;
 
@@ -175,17 +174,18 @@ echo "<script>
                    </div>
            
                     <label for="" class="mb-2 text-gray_base text-sm">Existing password </label>
-                    <input type="text" class="w-full" name="existing-password">
+                    <input type="text" class="w-full mb-4"  name="existing-password" id ="existing-password">
                     <label for="" class="mb-2 mt-6 text-gray_base text-sm">New Password</label>
-                    <input type="text" class="w-full" name="new-password">
+                    <input type="text" class="w-full mb-4" name="new-password" id="new-password-1">
                     <label for="" class="mb-2 text-gray_base text-sm">Confirm New Password</label>
-                    <input type="text" class="w-full" name="confirm-new-password">
-                    <div class="flex justify-between">
+                    <input type="text" class="w-full" name="confirm-new-password" id="confirm-new-password">
+                    <p class="text-danger my-3 label-error hidden">The passwords entered do not match </p>
+                    <div class="flex justify-between py-6">
                         <div>
-                            <button class=" bg-primary text-white px-5 py-2 rounded-md ">Save changes</button>
+                            <button type ="submit" class=" bg-primary text-white px-5 py-2 rounded-md save-changes-btn ">Save changes</button>
                         </div>
                         <div>
-                            <button class=" border-slate-300 border px-5 py-2 rounded-md ">Cancel changes</button>
+                            <button type="button" class=" border-slate-300 border px-5 py-2 rounded-md cancel-btn ">Cancel changes</button>
                         </div>
                     </div>
                 </form>
@@ -202,5 +202,6 @@ echo "<script>
     <script src="scripts/sidebar.js"></script>
     <script src="scripts/common.js"></script>
     <script src="scripts/header.js"></script>
+    <script src="scripts/password.js"></script>
    </body>
     </html>
