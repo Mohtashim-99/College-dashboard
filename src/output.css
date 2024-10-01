@@ -640,6 +640,10 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mb-9 {
+  margin-bottom: 2.25rem;
+}
+
 .ml-4 {
   margin-left: 1rem;
 }
@@ -808,6 +812,14 @@ video {
   flex: 1 1 0%;
 }
 
+.flex-auto {
+  flex: 1 1 auto;
+}
+
+.flex-initial {
+  flex: 0 1 auto;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -838,6 +850,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .gap-2 {
