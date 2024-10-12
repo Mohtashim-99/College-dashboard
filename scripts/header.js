@@ -18,7 +18,7 @@ let headerHTML = `
         <hr>
         <ul class="py-3">
             <li class="your-profile-li">
-                <a class="px-6 py-1.5 text-sm flex items-center gap-3 transition-all duration-200 ease-in group hover:text-primary hover:pl-9" href="">
+                <a class="px-6 py-1.5 text-sm flex items-center gap-3 transition-all duration-200 ease-in group hover:text-primary hover:pl-9" href="profile.php">
                     <i class="fa-solid fa-user text-iconColor transition-all duration-200 ease-in group-hover:text-primary"></i>
                     <span>Your profile</span>
                 </a>

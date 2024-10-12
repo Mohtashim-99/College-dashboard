@@ -44,7 +44,6 @@ const getnotification = async () => {
     let response = await fetch('notificationapi.php');
     let data = await response.json();
     let newdata = data.reverse();
-    console.log(newdata);
     if (newdata.length === 0) {
         document.querySelector(".notification-bottom").innerHTML += `
         <div class=" p-8 text-center m-auto text-xl flex flex-col justify-center items-center ">
@@ -63,11 +62,9 @@ const getnotification = async () => {
 
         if (notificationButton) {
             notificationButton.addEventListener("click", (event) => {
-                console.log("btn was clicked");
-               
-               document.querySelector(".addNotificationBtnTxt") .innerText = "Close Notification";
-                formDiv.style.display = "block";
-                document.querySelector(".addNotificationBtn").querySelector("i").className = "fa-solid fa-minus mr-1";
+            document.querySelector(".addNotificationBtnTxt") .innerText = "Close Notification";
+            formDiv.style.display = "block";
+            document.querySelector(".addNotificationBtn").querySelector("i").className = "fa-solid fa-minus mr-1";
             });
         }
 
@@ -78,8 +75,8 @@ const getnotification = async () => {
             document.querySelector(".notification-bottom").innerHTML += `
                             <div
                             class=" border-b cursor-pointer justify-center align-middle flex items-center">
-                            <a href="${content.pdf}" class="hover:text-primary p-3 inline-block w-full transition-all duration-200 ease-in text-center "> ${content.title}</a>
-                                <span class="px-6 border-l-2 border-solid border-iconColor delete-notification group" data-content="${content.title}" data-order="${content.order}">
+                            <a href="${content.pdf}" class="hover:text-primary p-3 inline-block w-full transition-all duration-200 ease-in text-center "> ${content.title},${content.order} ${content.id}</a>
+                                <span class="px-6 border-l-2 border-solid border-iconColor delete-notification group" data-content="${content.title}" data-order="${content.order}" data-id="${content.id}">
                                     <i class="fa-solid fa-trash-can text-iconColor transition-all duration-200 ease-in group-hover:text-primary "  title="Delete this notification"></i>
                                 </span>
                             </div>`;
@@ -105,33 +102,31 @@ document.querySelector(".notification-bottom").addEventListener("click", functio
     if (deleteNotification) {
         let contentValue = deleteNotification.getAttribute("data-content");
         let order = deleteNotification.getAttribute("data-order");
+        let id = deleteNotification.getAttribute("data-id");  // Fixed this line
         if (confirm(`Are you sure you want to delete ( ${contentValue} )`)) {
-            deleteNotificationFun(order);
+            deleteNotificationFun(id, order);
         }
-
-
     }
 });
 
 
-const deleteNotificationFun = (order) => {
-    const url = `notificationdelete.php?order=${encodeURIComponent(order)}`;
+
+const deleteNotificationFun = (id, order) => {
+    const url = `notificationdelete.php?id=${encodeURIComponent(id)}&order=${encodeURIComponent(order)}`;
 
     fetch(url, {
-        method: 'DELETE',
+        method: 'POST',
     })
-        .then(response => response.text())
-        .then(response => {
-            console.log(response);
-            if (response.includes("Deleted successfully")) {
-                alert("Notification deleted succedully");
-            }
-            else {
-                alert("Some error occured");
-            }
-
-        })
-        .catch(error => console.log("Error", error));
+    .then(response => response.text())
+    .then(response => {
+        console.log(response)
+        if (response.includes("Deleted notification")) {
+            alert("Notification deleted please refresh the page");
+        } else {
+            console.log("From line 128", response);
+        }
+    })
+    .catch(error => console.log("Error", error));
 };
 
 
