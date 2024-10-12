@@ -191,7 +191,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
                         <tbody>
                             <tr>
                                 <td class="p4">
-                                   <textarea class="border border-black w-full max-h-64 min-h-32 p-2" name="title" id="addparagraph" required></textarea>
+                                   <textarea autofocus class="border border-black w-full max-h-64 min-h-32 p-2" name="title" id="addparagraph" required></textarea>
                                 </td>
                                 <td class="p4">
                                     <input type="file" id="myFile" name="filename" class="
