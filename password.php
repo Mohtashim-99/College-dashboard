@@ -174,11 +174,11 @@ echo "<script>
                    </div>
            
                     <label for="" class="mb-2 text-gray_base text-sm">Existing password </label>
-                    <input type="text" class="w-full mb-4"  name="existing-password" id ="existing-password">
+                    <input type="password" class="w-full mb-4"  name="existing-password" id ="existing-password">
                     <label for="" class="mb-2 mt-6 text-gray_base text-sm">New Password</label>
-                    <input type="text" class="w-full mb-4" name="new-password" id="new-password-1">
+                    <input type="password" class="w-full mb-4" name="new-password" id="new-password-1">
                     <label for="" class="mb-2 text-gray_base text-sm">Confirm New Password</label>
-                    <input type="text" class="w-full" name="confirm-new-password" id="confirm-new-password">
+                    <input type="password" class="w-full" name="confirm-new-password" id="confirm-new-password">
                     <p class="text-danger my-3 label-error hidden">The passwords entered do not match </p>
                     <div class="flex justify-between py-6">
                         <div>
