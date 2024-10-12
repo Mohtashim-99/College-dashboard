@@ -1,3 +1,4 @@
+<?php
 include "connectiondb.php";
 session_start(); 
 
@@ -12,15 +13,15 @@ if (!$order || !$id) {
 
 // Log for debugging
 echo "\n id: " . $id;
-echo "\n order: " . $order;
+echo "\n order: " . $order."\n";
 
 $sql = "DELETE FROM notifications WHERE id = '$id'";
-echo $sql; // For debugging (remove in production)
+echo $sql."\n"; // For debugging (remove in production)
 $result = mysqli_query($conn, $sql);
 
 if ($result) {
     if (mysqli_affected_rows($conn) > 0) {
-        echo "Deleted notification";
+        echo "Deleted notification \n";
 
         // Update the order for other notifications
         $sql_update = "UPDATE notifications 
@@ -29,7 +30,7 @@ if ($result) {
         
         $result_update = mysqli_query($conn, $sql_update);
         if ($result_update) {
-            echo "Notification deleted and order updated";
+            echo "Notification deleted and order updated\n";
         } else {
             echo "Error in updating order: " . mysqli_error($conn);
         }
@@ -38,4 +39,5 @@ if ($result) {
     }
 } else {
     echo "Error: " . mysqli_error($conn);
-}
+}  
+?>
