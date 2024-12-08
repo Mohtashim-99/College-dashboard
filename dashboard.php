@@ -1,10 +1,10 @@
 <?php
 session_start(); 
 
-// if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true){
-//     header("location:login.php");
-//     exit;
-// }
+if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true){
+    header("location:login.php");
+    exit;
+}
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     include "connectiondb.php";
@@ -83,9 +83,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 
     <div class="main-outer-container flex ">
-        <div class="left-container w-full max-w-80 min-w-60   text-black py-4 bg-white relative">
+        <div class="left-container w-full max-w-80 min-w-60  text-black py-4 bg-white relative">
             <div class="left-container-inner">
-
             </div>
         </div>
 
