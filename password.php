@@ -103,19 +103,7 @@ echo "<script>
             color: blue;
 
         }
-        input{
-            border: 2px solid rgb(222, 224, 227);
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-
-        }
-        .success-div{
-            color:rgb(45, 159, 70);
-            background-color:#e7f8eb;    
-            border: 1px solid #dbf5e1;
-            padding:  1rem 1.5rem;
-            margin:1rem  0 1rem  0;
-        }
+      
         .password-li {
             background-color: rgb(241, 245, 254);
         }
